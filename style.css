@@ -1,0 +1,7 @@
+input[type=text] {
+    margin-bottom: 20px;
+    padding: 10px 50px;
+    color: red;
+    border-radius: 5px;
+    outline: none;
+}

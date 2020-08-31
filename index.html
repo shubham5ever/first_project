@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <label for="numOne">Name:</label> 
+    <input id="name" id="name" type="text" placeholder="enter the first num"><br>
+    
+    <label for="numTwo">Age:</label> 
+    <input id="age"  type="text" placeholder="enter the Second num"><br>
+    
+    <label for="result">Eligibility:</label> 
+    <input id="result"  type="text" placeholder="Result"><br>
+
+    <button id="btn" onclick="finalresult()">status</button>
+
+
+
+
+    <script>
+        
+        // qty of input box by using 3 or 5 or 6 input box (multiple and Subtract) 
+        
+        
+
+
+        function finalresult(){
+
+            var valuename = document.getElementById("name").value;
+            var valueage = document.getElementById("age").value;
+            var valueresult = document.getElementById("result");
+            // valueresult.value = (valueage >=18) ? valuename +" " + "you are eligible for voting" : valuename + " " + "you are not eligible for voting";
+            if (valueage >= 18) {
+                valueresult.value = '';
+                valueresult.value += `${valuename} you are eligible`;
+            } else {
+                valueresult.value = '';
+                valueresult.value += `${valuename} you are not eligible`;
+                
+            }
+
+        }
+    </script>
+
+</body>
+</html>
